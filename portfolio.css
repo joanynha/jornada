@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* menu */
+
+li, a, button {
+    font-family: 'Robot Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    color:#edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.furret {
+    height: 70px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.navegação {
+    list-style: none;
+}
+
+.navegação li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navegação li a:hover {
+    color: rgb(8, 104, 104);
+}
+
+.navegação li a:hover {
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: rgb(7, 7, 7);
+}
+
+button:hover {
+    color: dimgray;
+}
+
+@media (max-width: 600px) {
+    .furret {
+        display: none;
+     }
+}
+
+
+/* apresentação */
+
+.eu {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 50px;
+    display: inline-block;
+    margin: 2cm 4cm;
+}
+
+.nome {
+    margin-bottom: 2cm;
+}
+
+.eu li {
+    color: black;
+    list-style: none;
+    padding: 20px;
+}
+
+.jiji {
+    background-color: white;
+    padding: 20px;
+    margin-top: 2cm;
+    margin-right: 4cm;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+    width: 400px;
+    height: 400px;
+    float: right;
+    transform: rotate(-1deg);
+}
+
+@media (max-width: 800px) {
+    .jiji {
+        display: none;
+    }
+}
+
+/* sobre mim */
+
+.titulo {
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5cm;
+    padding: 20px;
+}
+
+.descrição {
+    border: 10px solid black;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10cm;
+    padding: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/* hobbies */
+
+.hobbies {
+    background-color: black;
+    width: 82%;
+    margin: auto;
+    margin-bottom: 3cm;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.hobbiesgaleria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.polaroid {
+    width: 400px;
+    height: 350px;
+}
+
+figure {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+figcaption {
+    text-align: center;
+    padding: 5pxx;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+#jogar {
+    transform: rotate(1deg);
+}
+
+#ler {
+    transform: rotate(-1deg);
+}
+
+#assistir {
+    transform: rotate(-1deg);
+}
+
+#desenhar {
+    transform: rotate(-2deg);
+}
+
+
+/* interesses */
+
+.interesses {
+    background-color: black;
+    width: 82%;
+    margin: auto;
+    margin-top: 8cm;
+    margin-bottom: 3cm;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.interessesgaleria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#filmefavorito {
+    transform: rotate(1deg);
+}
+
+#livrofavorito {
+    transform: rotate(-1deg);
+}
+
+#animefavorito {
+    transform: rotate(-1deg);
+}
+
+#jogofavorito {
+    transform: rotate(2deg);
+}
+
+#bandafavorita {
+    transform: rotate(2deg);
+}
+
+#mangáfavorito {
+    transform: rotate(1deg);
+}
+
+
+/* contato */
+
+.contato {
+        background-color: black;
+        width: 82%;
+        margin: auto;
+        margin-top: 8cm;
+        margin-bottom: 3cm;
+        padding: 20px;
+        color: white;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 500;
+        font-size: 50px;
+}
+
+.linksdecontato {
+    margin: auto;
+    margin-bottom: 3cm;
+    width: 20%;
+}
+
+.linksdecontato li {
+    list-style: none;
+    background-color: black;
+    margin: 35px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.linksdecontato a:hover {
+    color: rgb(8, 104, 104);
+    transition: all 0.3s ease 0s;
+}
+
+
+/* projeto concluído */
